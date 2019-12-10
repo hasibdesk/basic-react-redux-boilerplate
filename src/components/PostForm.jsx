@@ -4,10 +4,7 @@ import { connect } from "react-redux";
 import { createPost } from "../actions/postActions";
 
 class PostForm extends Component {
-  state = {
-    title: "",
-    body: ""
-  };
+  state = { title: "", body: "" };
 
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
